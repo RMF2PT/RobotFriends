@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
-import Scroll from './Scroll';
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
 
 class App extends Component {
 	constructor() {
@@ -30,7 +30,7 @@ class App extends Component {
 			return <h1>Loading...</h1>;
 		} else {
 			return (
-				<div className="tc">
+				<div className="tc fixed">
 					<h1 className="f1">RobotFriends</h1>
 					<SearchBox searchChange={this.onSearchChange} />
 					<Scroll>
